@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <title>Мышь</title>
+    <link rel="shortcut icon" href="./img/logot.png">
+</head>
+<body>
+    
+    <header>
+        <section class="top-nav">
+            <a class="logo_header" href="#"></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li class="main_page"><a href="#">Главная страница</a></li>
+                <li class="inner" onmouseenter="openInnerSubMenu()"><a href="#">Внутренняя архитектура</a>
+                </li>
+                <li class="outer" onmouseenter="openOuterSubMenu()"><a href="#">Внешняя архитектура</a>
+                </li>
+                <li class="games" onmouseenter="openGamesSubMenu()"><a href="#">Игры</a>
+                </li>
+            </ul>
+        </section>
+        <ul class="submenu submenu1" id="sm1" onmouseleave="closeInnerSubMenu()">
+            <li><a href="#">Оперативная память</a></li>
+            <li><a href="#">Материнская плата</a></li>
+            <li><a href="#">Видеокарта</a></li>
+            <li><a href="#">Процессор</a></li>
+            <li><a href="#">Винчестер</a></li>
+            <li><a href="#">Блок питания</a></li>
+        </ul>
+        <ul class="submenu submenu2" id="sm2" onmouseleave="closeGamesSubMenu()">
+            <li><a href="">Игра о внутренней архитектуре</a></li>
+            <li><a href="">Игра о внешней архитектуре</a></li>
+        </ul>
+        <ul class="submenu submenu3" id="sm3" onmouseleave="closeOuterSubMenu()">
+            <li><a href="">Монитор</a></li>
+            <li><a href="">Клавиатура</a></li>
+            <li><a href="">Мышь</a></li>
+            <li><a href="">Системный блок</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="block1">
+            <div class="slaider">
+                <div class="slaider_text">Компьютерая мышь</div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер1.jpg" />
+                        </div>
+            
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер2.opdownload" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер3.opdownload" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер4.opdownload" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер5.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер6.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/Слайдер7.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="block2">
+            <div class="block2_text">
+                <div class="block2_descripton" onclick="menu1_zoom()"><p class="h1">Описание</p></div>
+            <div class="block2_chatacteristics" onclick="menu2_zoom()"><p class="h2" >Характеристики</p></div>
+            <div class="block2_models" onclick="menu3_zoom()"><p class="h3" >Популярные модели</p></div>
+        </div>
+            <div class="menues">
+                <div class="menu1">
+                    <div class="menu1_container">
+                        <div class="menu1_image"></div>
+                        <div class="menu1_text">
+                            <span>Компьютерная мышь (множественное число мышей, редко мыши) [nb 1]-это ручное указательное устройство, которое обнаруживает двумерное движение относительно поверхности. Это движение обычно преобразуется в движение указателя на дисплее, что позволяет плавно управлять графическим пользовательским интерфейсом компьютера. <br><br>
+                                Первым компьютером, в набор которого включалась мышь, был мини-компьютер Xerox 8010 Star Information System, представленный в 1981 году. Мышь фирмы Xerox имела три кнопки и стоила 400 долларов США, что соответствует почти 1000 долларов в ценах 2012 года с учётом инфляции[2]. В 1983 году фирма Apple выпустила свою собственную однокнопочную мышь для компьютера Lisa, стоимость которой удалось уменьшить до $25. Широкую известность мышь приобрела благодаря использованию в компьютерах Apple Macintosh и позднее в ОС Windows для IBM PC совместимых компьютеров.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu2">
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon1"></div>
+                            <div class="text">
+                                <div class="text_title">Тип:</div>
+                                <div class="text_subtitle">мышь, игровая мышь, вертикальная мышь, 3D-мышь, трекбол, трекпад
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon2"></div>
+                            <div class="text">
+                                <div class="text_title">Название:</div>
+                                <div class="text_subtitle">для ПК, для Sony PlayStation, для Microsoft Xbox, для компьютеров Apple, для iPad</div>
+                            </div>
+                        </div><div class="offer">
+                            <div class="icon3"></div>
+                            <div class="text">
+                                <div class="text_title">Тип сенсора:</div>
+                                <div class="text_subtitle">оптический, лазерный, BlueTrack, BlueEye, V-Track</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="offer">
+                            <div class="icon4"></div>
+                            <div class="text">
+                                <div class="text_title">Время отклика:</div>
+                                <div class="text_subtitle">время отклика характеризует количество информации в единицу времени.</div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="icon5"></div>
+                            <div class="text">
+                                <div class="text_title">Дполонительные кнопки:</div>
+                                <div class="text_subtitle">вперед/назад, двойной клик, тройной клик, смена подсветки, смена профиля</div>
+                            </div>
+                        </div><div class="offer">
+                            <div class="icon6"></div>
+                            <div class="text">
+                                <div class="text_title">Тип колеса:</div>
+                                <div class="text_subtitle">с нажатием, с нажатием и отклонением, сенсорное</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="menu3">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card_image1"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>Razer DeathAdder V2</span></div>
+                                <div class="card_subtitle"><span>проводная USB, сенсор оптический 8500 dpi, 6 кнопок, колесо с нажатием, цвет черный</span></div>
+                                <div class="card_cost"><span>135 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image2"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>A4Tech Bloody V8</span></div>
+                                <div class="card_subtitle"><span>проводная USB, сенсор оптический 3200 dpi, 8 кнопок, колесо с нажатием, цвет черный</span></div>
+                                <div class="card_cost"><span>62 BYN</span></div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_image3"></div>
+                            <div class="card_text">
+                                <div class="card_title"><span>SteelSeries Rival 3</span></div>
+                                <div class="card_subtitle"><span>проводная USB, сенсор оптический 8500 dpi, 6 кнопок, колесо с нажатием, цвет черный</span></div>
+                                <div class="card_cost"><span>110 BYN</span></div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="logo_footer">desPCription</div>
+        <div class="seti">
+            <div class="text_network">Ищите нас в соцсетях:</div>
+            <a href="#" class="mail"></a>
+            <a href="#" class="vk"></a>
+            <a href="#" class="insta"></a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/zoom.js"></script>
+</body>
+</html>
